@@ -54,3 +54,11 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+/* karuselli */
+.px-3 {
+    margin: 85px;
+    max-width: 50%;
+}
+.carousel-inner{
+    border-radius: 10px;
+}
