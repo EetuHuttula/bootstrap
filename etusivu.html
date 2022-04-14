@@ -9,8 +9,8 @@
     <link href="styles.css" rel="stylesheet">
 </head>
  <!-- navbarr-->
-<body>
-      <body class="d-flex h-100 text-center text-white bg-dark"> 
+
+      <body class=" text-center text-white bg-dark"> 
         <div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column col-lg-6">
           <header class="mb-auto">
             <div>
@@ -23,12 +23,11 @@
               </nav>
             </div>
           </header>
-      </body>
           <!--//navbar-->
 
-          <!--HERO-->
-        <div class="hero vh-100 d-flex col-xm-12 col-md-10 mb-6">
-          <main class="px-3">
+          <!--Carousel-->
+        <div class="carousel vh-90">
+          <main class="px-3 w-100 h-100 p-5 mx-auto  flex-column">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -37,13 +36,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/Citroen.jpeg" class="d-block w-100" alt="Autoni">
+                    <img src="images/Citroen.jpeg" class="w-100" alt="Autoni">
                   </div>
                   <div class="carousel-item">
                     <img src="images/Eetu.jpg" class="w-100" alt="Eetu">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/kalastus.jpeg" class="d-block w-100" alt="Kala-saalis">
+                    <img src="images/kalastus.jpeg" class="w-100" alt="Kala-saalis">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -57,34 +56,24 @@
             </div> 
           </main> 
         
-             <!--//hero-->
+             <!--//Carousel-->
 
-              <!--QUOTECONTAINER--> 
-
-              <div class="quote-container">
-                <div class="row">
-                  <div class="card p-3 text-end-center d-flex">
-                    <figure class="mb-5">
-                      <blockquote class="blockquote">
-                        <p>A well-known quote, contained in a blockquote element.</p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer mb- text-muted">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div> 
-        </div> 
-              <!--//QUOTECONTAINER-->
-            
-        
-          <footer class="mt-auto text-white-50">
-            
-            
-          </footer>
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+             <!--FOOTER-->
+             <div class="footer-container vh-10">
+               <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 my- border-top">
+                 <div class="col-md-4 align-items-center">
+                   <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none">
+                     <svg class="bi" width="20" height="5"><use xlink:href="#bootstrap"/></svg>
+                   </a>
+                   <span class="text-muted">&copy; 2021 Company, Inc</span>
+                 </div>
+             
+                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                   <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                   <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                   <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                 </ul>
+             </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>  
 </html>
