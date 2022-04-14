@@ -51,7 +51,11 @@
 .carousel-inner {
     border-radius: 10px;
 }
-/*FOOTER*/
-.footer-container {
-  height: 20px;
+/* quotebox */
+blockquote {
+  color: #000;
 }
+
+
+
+
