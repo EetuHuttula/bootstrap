@@ -77,7 +77,9 @@ ion-icon {
 }
 
 /*AUTONI CSS*/
-
+.car-info-container {
+  margin-bottom: 20%;
+}
 /*CAR-CONTAINER*/
 img[alt~="siti"] {
   border-radius: 5px;
