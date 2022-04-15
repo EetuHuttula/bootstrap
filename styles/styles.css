@@ -70,3 +70,13 @@ blockquote {
 [class*="col-"] {
   width: 100%;
 }
+
+/*AUTONI CSS*/
+car-info-container {
+  margin-left: 15px;
+  align-items: left;
+}
+img[alt~="siti"] {
+  border-radius: 5px;
+  max-width: 100%;
+}
