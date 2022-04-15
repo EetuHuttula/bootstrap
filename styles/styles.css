@@ -67,6 +67,6 @@ blockquote {
   color: #000;
 }
 
-
-
-
+[class*="col-"] {
+  width: 100%;
+}
