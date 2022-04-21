@@ -10,7 +10,6 @@
   height: 860px;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-
 }
 
 /*NAVBAR*/
@@ -72,8 +71,8 @@ blockquote {
 }
 /*FOOTERICONS*/
 .icons {
+  justify-content: center;
   margin: 8px;
-  padding-left: 15px;
 }
 ion-icon {
   padding-left: 15px;
