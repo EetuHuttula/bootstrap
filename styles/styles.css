@@ -46,7 +46,11 @@
     max-width: 50%;
     
 }
+#carousel {
+  display: none;
+}
 .carousel-inner {
+  display: none;
     border-radius: 10px;
 }
 
@@ -78,6 +82,7 @@ ion-icon {
 
 /*AUTONI CSS*/
 .car-info-container {
+  display: none;
   padding: 15px;
 }
 /*CAR-CONTAINER*/
@@ -88,4 +93,13 @@ img[alt~="me"] {
 }
 .Cit-text {
   text-align: left;
+}
+
+/*buttoni*/
+.btn {
+  margin-bottom: 5px;
+}
+main, h1, p {
+  margin-right: 35px;
+  justify-items: center;
 }
