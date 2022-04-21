@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../styles/styles.css" rel="stylesheet">
+    <script src="../script/scripts.js" defer></script>
 </head>
 
 <body class="bg-black">
@@ -24,27 +25,128 @@
                         <h3 class="float-md-start mb-0">Eetun kotisivut</h3>
                         <nav class="nav nav-masthead justify-content-center float-md-end">
                             <a class="nav-link" href="../etusivu.html">Etusivu</a>
-                            <a class="nav-link"  href="../pages/Auto.html">Autoni</a>
+                            <a class="nav-link" href="../pages/Auto.html">Autoni</a>
                             <a class="nav-link" href="../pages/galleria.html">Galleria</a>
                             <a class="nav-link active" aria-current="page" href="../pages/kalastus.html">Kalastus</a>
                         </nav>
                     </div>
                 </header>
-            </div>  
-        </div>    
+            </div>
+        </div>
+
         <!--//navbar-->
+
+        <!--buttons-->
+
+        <div class="text-center text-white bg-transparent">
+            <main class="px-3 position-absolute bottom-50 start-50 translate-middle">
+                <h1>Viimeistä viedään</h1>
+                <p class="lead">Mitähän tähän keksis</p>
+                <p class="lead">
+                    <button type="button" class="btn btn-lg btn-secondary fw-bold border-white bg-dark"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                        data-bs-content="Loppu ideat.">
+                        Klikkaa mua
+                    </button>
+                    <a href="../etusivu.html" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Etusivulle</a>
+                </p>
+            </main>
+        </div>
+        <!--//buttons-->
     </div>
+
+   
 
     <!--divider-->
     <div class="divider"></div>
     <!--//divider-->
-                   
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 text-white">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+      </div>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 bg-black text-white ">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+      </div>
+    
+      <div class="divider"></div>
+      
+    <div id="form" class="content-container-fluid d-flex p-5 mx-auto flex-column col-lg text-white">
+        <div class="row col-12">
+            <h1>Mihin laitetaan keksit?</h1>
+            <form class="row g-2">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Montako saisi olla?</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Tilaa</button>
+                </div>
+            </form>
+        </div>
+        <div id="danger" class="alert alert-danger" role="alert">
+            Keksit loppunneet!
+          </div>
+    </div>
+
     <!--FOOTER-->
     <div class="footer-container bg-black position-fixed bottom-0 end-0">
         <footer class="d-flex justify-content-center">
             <div class="icons">
-             <a href=""><ion-icon size="large" name="logo-instagram"></ion-icon></a>
-             <a href=""><ion-icon size="large" name="logo-youtube"></ion-icon></a>
+                <a href=""><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon size="large" name="logo-youtube"></ion-icon></a>
             </div>
         </footer>
     </div>

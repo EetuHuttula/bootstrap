@@ -102,3 +102,19 @@ main, h1, p {
   margin-right: 35px;
   justify-items: center;
 }
+
+/*kalastus sivun content container*/
+
+#form {
+  position: relative;
+  size: 50%;
+  width: 50%;
+}
+.alert {
+  display: none;
+}
+.d-md-flex {
+  size: 50%;
+  width: 50%;
+  margin: 4px;
+}
