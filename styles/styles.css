@@ -1,22 +1,13 @@
-/*
- * Globals
- */
-
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
 .bimg{
    /* kuva: https://pixabay.com/fi/illustrations/vuoret-kallioita-lumi-1112911/*/
   background-image: url(../images/Mountain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
+  width: 100%;
+  height: 650px;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 /*NAVBAR*/
 .nav-masthead .nav-link {
@@ -78,10 +69,13 @@ ion-icon {
 
 /*AUTONI CSS*/
 .car-info-container {
-  margin-bottom: 20%;
+  padding: 15px;
 }
 /*CAR-CONTAINER*/
-img[alt~="siti"] {
+img[alt~="me"] {
   border-radius: 5px;
   max-width: 100%;
+}
+.Cit-text {
+  text-align: left;
 }
