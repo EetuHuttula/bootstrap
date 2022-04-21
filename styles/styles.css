@@ -1,12 +1,5 @@
 /*backgrounds*/
-.bimg{
-   /* kuva: https://pixabay.com/fi/illustrations/vuoret-kallioita-lumi-1112911/*/
-  background-image: url(../images/Mountain.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-}
-.bimg2 {
+.bimg {
   /*kuva: https://pixabay.com/fi/photos/auto-tie-luonne-puita-katu-7086763/*/
   background-image: url(../images/Carbackground.jpg);
   background-size: cover;
