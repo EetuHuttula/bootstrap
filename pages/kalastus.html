@@ -14,7 +14,7 @@
 
 <body class="bg-black">
 
-    <div class="bimg" alt="background">
+  <div class="bimg" alt="background">
 
         <!-- navbarr-->
 
@@ -35,11 +35,11 @@
         </div>
 
         <!--//navbar-->
-
+     
         <!--buttons-->
 
         <div class="text-center text-white bg-transparent">
-            <main class="px-3 position-absolute bottom-50 start-50 translate-middle">
+            <main class="px-3 position-absolute top-50 start-50 translate-middle">
                 <h1>Viimeistä viedään</h1>
                 <p class="lead">Mitähän tähän keksis</p>
                 <p class="lead">
@@ -53,48 +53,32 @@
             </main>
         </div>
         <!--//buttons-->
-    </div>
-
-   
+  </div>
 
     <!--divider-->
     <div class="divider"></div>
     <!--//divider-->
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 text-white">
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-        </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-        </div>
+
+  <div class="fun-container text-white d-flex p-5 mx-auto flex-column justify-center">
+    <div class="row justify-content-center">
+      <div class="col-6">
+          <!--https://pixabay.com/fi/illustrations/kissa-kissan-pieni-kissa-kawaii-5415709/-->
+        <img src="../images/kissakala.png" alt="kissakala">
       </div>
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 bg-black text-white ">
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-        </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-sm bg-black">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-          <div class="bg-body shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-        </div>
+      <div class="col-3">
+        <label for="tehtava" class="form-label">Miksi tätä sanotaan?</label>
+        <input type="email" class="form-control" id="tehtava">
       </div>
-    
-      <div class="divider"></div>
-      
+      <div class="col-3">
+        <button type="button" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Tarkista</button>
+      </div>
+    </div>
+  </div>
+
+    <!--divider-->
+    <div class="divider"></div>
+    <!--//divider-->
+
     <div id="form" class="content-container-fluid d-flex p-5 mx-auto flex-column col-lg text-white">
         <div class="row col-12">
             <h1>Mihin laitetaan keksit?</h1>
@@ -107,7 +91,7 @@
                   <label for="inputPassword4" class="form-label">Password</label>
                   <input type="password" class="form-control" id="inputPassword4">
                 </div>
-                <div class="col-12">
+                <div class="col-6">
                   <label for="inputAddress" class="form-label">Address</label>
                   <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                 </div>
@@ -131,7 +115,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-6">
                   <button type="submit" class="btn btn-primary">Tilaa</button>
                 </div>
             </form>

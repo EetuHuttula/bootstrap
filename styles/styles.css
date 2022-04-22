@@ -118,3 +118,13 @@ main, h1, p {
   width: 50%;
   margin: 4px;
 }
+.fun-container {
+  max-width: 100%;
+  margin: 50px;
+  align-items: center;
+}
+img[alt~="kissakala"] {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
