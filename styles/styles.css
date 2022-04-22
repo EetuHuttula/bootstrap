@@ -41,10 +41,6 @@
 }
 
 /* karuselli */
-.px-3 {
-    max-width: 50%;
-    
-}
 #carousel {
   display: none;
 }

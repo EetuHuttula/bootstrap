@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleria</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../styles/styles.css" rel="stylesheet">
     <script src="../script/scripts.js" defer></script>
 </head>
+
 <body class="bg-black">
     <div class="bimg" alt="background">
         <!--navbarr-->
         <div id="navbar" class="text-center text-white bg-transparent">
-            <div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column col-lg-6">
+            <div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column col-lg-4">
                 <header class="mb-auto">
                     <div>
                         <h3 class="float-md-start mb-0">Eetun kotisivut</h3>
@@ -32,55 +35,61 @@
                 <h1>Its me, myself and I!</h1>
                 <p class="lead">Pari hassua kuvaa elävästä elämästä.</p>
                 <p class="lead">
-                    <button type="button" onclick="toggle2()"  class="btn btn-lg btn-secondary fw-bold border-white bg-dark">klikkaa mua</button>
-                    <a href="../pages/kalastus.html" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Seuraava sivu</a>
-                  </p>
+                    <button type="button" onclick="toggle2()"
+                        class="btn btn-lg btn-secondary fw-bold border-white bg-dark">klikkaa mua Uudestaan</button>
+                    <a href="../pages/kalastus.html"
+                        class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Seuraava sivu</a>
+                </p>
             </main>
-        </div>        
+        </div>
     </div>
     <div class="divider"></div>
     <!--//navbar-->
 
     <!--Carousel-->
-    <div id="carousel" class="carousel bg-black">
-        <main class="px-3 w-100 h-100 p-5 mx-auto flex-column">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div id="cInner" class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/Citroen.jpeg" class="w-100" alt="Autoni">
+    <div class="carousel-content">
+        <div id="carousel" class="bg-black col-sm-3 align-item-right">
+            <div class="row">
+                <main class="px-3 w-50 h-50 p-5 mx-auto flex-column">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../images/Eetu.jpg" class="w-100" alt="Eetu">
+                    <div id="cInner" class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/Citroen.jpeg" class="w-100" alt="Autoni">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/Eetu.jpg" class="w-100" alt="Eetu">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/kalastus.jpeg" class=" w-100" alt="Kala-saalis">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../images/kalastus.jpeg" class=" w-100" alt="Kala-saalis">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                </main>
             </div>
-
+        </div>
             <!--//Carousel-->
 
             <!--QuoteBox-->
 
-            <div id="quotecontainer">
+            <div id="quotecontainer " class="w-50 h-100 col-3">
                 <div class="card p-1">
                     <figure class="p-3 mb-0">
                         <blockquote class="blockquote">
@@ -92,19 +101,73 @@
                     </figure>
                 </div>
             </div>
-        </main>
+            <!--//QuoteBox-->
+
+            <!--Accordion-->
+            <div class="accordion col-3" style="margin-top: 10px;" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Nuoruus
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <strong>Nuoruuteni pussissa.</strong> </br>
+                            I'll ask you this! Miks sua kiinnostaa mun nuoruus?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Keski-ikä
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <strong>Keski-iän kriisi.</strong> </br>
+                            Entiiä ei oo viellä tapahtunut.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Vanhuus
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <strong>Country for old men.</strong> </br>
+                            Kahtellaa syssymmällä tuotaki.
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-    <!--//QuoteBox-->
+
 
     <!--FOOTER-->
 
     <div class="footer-container bg-black position-fixed bottom-0 end-0">
-      <footer class="d-flex  justify-content-center">
-        <div class="icons">
-            <a href=""><ion-icon size="large" name="logo-instagram"></ion-icon></a>
-            <a href=""><ion-icon size="large" name="logo-youtube"></ion-icon></a>
-        </div>
-      </footer>
+        <footer class="d-flex  justify-content-center">
+            <div class="icons">
+                <a href="">
+                <ion-icon size="large" name="logo-instagram"></ion-icon></a>
+                <a href="">
+                <ion-icon size="large" name="logo-youtube"></ion-icon></a>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -112,4 +175,5 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
