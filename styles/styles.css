@@ -1,7 +1,11 @@
-/*backgrounds*/
+* {
+  font-family: sans-serif;
+}
+
+/*background*/
 .bimg {
   /*kuva: https://pixabay.com/fi/photos/auto-tie-luonne-puita-katu-7086763/*/
-  background-image: url(../images/Carbackground.jpg);
+  background-image: url(../images/Carbbackground.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
