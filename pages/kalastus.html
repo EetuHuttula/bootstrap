@@ -48,7 +48,6 @@
                         data-bs-content="Loppu ideat.">
                         Klikkaa mua
                     </button>
-                    <a href="../etusivu.html" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Etusivulle</a>
                 </p>
             </main>
         </div>
@@ -59,52 +58,61 @@
     <div class="divider"></div>
     <!--//divider-->
 
-  <div class="fun-container text-white d-flex p-5 mx-auto flex-column justify-center">
-    <div class="row justify-content-center">
-      <div class="col-3">
-          <!--https://pixabay.com/fi/illustrations/kissa-kissan-pieni-kissa-kawaii-5415709/-->
-        <img src="../images/kissakala.png" alt="kissakala">
+  <div class="fun-container text-white p-5 mx-auto flex-column ">
+    <div class="row">
+     <div id="t01">
+        <h3>Tässä tehtävässä mietitään mikä näistä tulee</h3>
+        <div class="col-3">
+            <!--https://pixabay.com/fi/illustrations/kissa-kissan-pieni-kissa-kawaii-5415709/-->
+          <img src="../images/kissakala.png" alt="kissakala">
+        </div>
+        <div class="input col-3 w-50">
+          <label for="tehtava" class="form-label">Näitä ui vedessä</label>
+          <input type="text" class="form-control1" id="tehtava">
+        </div>
+        <div class="button col-3">
+          <button id="btn1" type="button" class="btn btn-lg btn-secondary fw-bold border-white bg-dark" style="margin-top: 8px">Tarkista</button>
+        </div>
       </div>
-      <div class="col-3">
-        <label for="tehtava" class="form-label">Näitä ui vedessä</label>
-        <input type="email" class="form-control" id="tehtava">
+    </div>  
+      <div id="success" class="alert alert-success" role="alert">
+      </div> 
+      <div id="danger" class="alert alert-danger" role="alert">
       </div>
-      <div class="col-3">
-        <button type="button" class="btn btn-lg btn-secondary fw-bold border-white bg-dark" style="margin-top: 8px">Tarkista</button>
-      </div>
-    </div>
-  </div>
+  
 
-    <!--divider-->
-    <div class="divider"></div>
-    <!--//divider-->
-
-    <div id="form" class="content-container d-flex p-5 mx-auto flex-column justify-center text-white">
+    <div id="form1" class="content-container p-5 mx-auto flex-column text-white">
         <div class="row">
-            <h1>Minne palkinto tehtävästä?</h1>
+            <form>
+              <h1>Minne palkinto tehtävästä?</h1>
                 <div class="col-3">
                   <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="katu, talo ja asunto">
+                  <input type="text" name="address" class="form-control1 w-50" id="inputAddress">
                 </div>
                 <div class="col-md-3">
                   <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" name="city" class="form-control1 w-50 id="inputCity">
                 </div>
                 <div class="col-md-3">
                   <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+                  <input type="text" name="zip" class="form-control1 w-50" id="inputZip">
                 </div>
                 <div class="col-12">
                 </div>
                 <div class="col-6" style="margin-top: 8px;">
-                  <button type="submit" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Tilaa</button>
+                  <button id="btn2" type="submit" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Tilaa</button>
                 </div>
             </form>
+            
+            </div>
         </div>
-        <div id="danger" class="alert alert-danger" role="alert">
-            Keksit loppunneet!
-          </div>
-    </div>
+      </div> 
+
+      <div class="d-flex">
+        <div id="danger2" class="alert2 alert-danger w-50" role="alert"></div>
+      </div>
+   
+    </div>   
 
     <div class="divider"></div>
 
