@@ -40,8 +40,9 @@
  height: 1px;
 }
 
-/* karuselli */
+/* Galleria page */
 #carousel {
+  width: auto;
   display: none;
 }
 .carousel-inner {
@@ -52,11 +53,9 @@
 /* quotebox */
 
 
-#quotecontainer {
+.quote-container {
   margin-top: 15px;
 }
-
-
 
 blockquote {
   color: #000;
@@ -64,6 +63,11 @@ blockquote {
 
 [class*="col-"] {
   width: 100%;
+}
+.accordion {
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 /*FOOTERICONS*/
 .icons {
@@ -123,4 +127,13 @@ img[alt~="kissakala"] {
   width: 100%;
   max-width: 400px;
   height: auto;
+}
+
+/*Responsive footter*/
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    position: absolute;
+    display: block;
+  }
 }

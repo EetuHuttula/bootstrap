@@ -43,14 +43,17 @@
             </main>
         </div>
     </div>
-    <div class="divider"></div>
+   
     <!--//navbar-->
 
+    <!--divider-->
+    <div class="divider"></div>
+
     <!--Carousel-->
-    <div class="carousel-content">
-        <div id="carousel" class="bg-black col-sm-3 align-item-right">
-            <div class="row">
-                <main class="px-3 w-50 h-50 p-5 mx-auto flex-column">
+    <div class="container">
+        <div class="row">
+            <div id="carousel" class="bg-black col-6">
+                <main class="px-3 p-5 mx-auto w-50 h-50 flex-column">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -83,13 +86,13 @@
                     </button>
                     </div>
                 </main>
-            </div>
-        </div>
+            </div>    
+    
             <!--//Carousel-->
 
             <!--QuoteBox-->
 
-            <div id="quotecontainer " class="w-50 h-100 col-3">
+            <div class="quote-container col-12 w-50 h-50">
                 <div class="card p-1">
                     <figure class="p-3 mb-0">
                         <blockquote class="blockquote">
@@ -104,62 +107,48 @@
             <!--//QuoteBox-->
 
             <!--Accordion-->
-            <div class="accordion col-3" style="margin-top: 10px;" id="accordionPanelsStayOpenExample">
+            <div class="col-6 w-50 h-50">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne">
-                            Nuoruus
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                        aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            <strong>Nuoruuteni pussissa.</strong> </br>
-                            I'll ask you this! Miks sua kiinnostaa mun nuoruus?
-                        </div>
-                    </div>
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseTwo">
-                            Keski-ikä
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            <strong>Keski-iän kriisi.</strong> </br>
-                            Entiiä ei oo viellä tapahtunut.
-                        </div>
-                    </div>
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseThree">
-                            Vanhuus
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <strong>Country for old men.</strong> </br>
-                            Kahtellaa syssymmällä tuotaki.
-                        </div>
-                    </div>
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
                 </div>
             </div>
+            </div> 
+        </div>    
     </div>
-
+    
+    <div class="divider"></div>
 
     <!--FOOTER-->
 
-    <div class="footer-container bg-black position-fixed bottom-0 end-0">
+    <div class="footer-container bg-transparent">
         <footer class="d-flex  justify-content-center">
             <div class="icons">
                 <a href="">
