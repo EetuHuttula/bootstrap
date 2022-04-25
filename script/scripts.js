@@ -1,6 +1,6 @@
 //autoni page button
 function toggle() {
-    let carInfo = document.querySelector("#car-info");
+    let carInfo = document.getElementById("car-info");
     if (carInfo.style.display === "none" || carInfo.style.display === "") {
         carInfo.style.display = "block";
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
@@ -11,8 +11,8 @@ function toggle() {
 
 //Galleria page button
 function toggle2() {
-    let carouselInfo = document.querySelector("#carousel");
-    let cInner = document.querySelector("#cInner");
+    let carouselInfo = document.getElementById("carousel");
+    let cInner = document.getElementById("cInner");
     if (carouselInfo.style.display === "none" || carouselInfo.style.display === ""
         && cInner.style.display === "none" || cInner.style.display === "") {
         carouselInfo.style.display = "block";
@@ -38,7 +38,7 @@ let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 let btn1 = document.getElementById("btn1");
 btn1.addEventListener("click", check)
 
-
+//form1 hidden
 document.getElementById("form1").style.display = "none";
 
 function check() {
@@ -55,56 +55,49 @@ function check() {
         document.querySelector("#form1").style.display = "block"
     } else {
         wrong.style.display = "block"
-        wrong.innerHTML = "Väärä vastaus, mikä on kissan ja kalan yhdistys?"
+        wrong.innerHTML = "Vastaus ei ole " + inputField.value + " Oikea vastaus on Kissakala :)"
     }
-}
-
-//formDataC
-
-let form1 = document.querySelector("form")
-
-form1.addEventListener("submit", sendData);
-
-function sendData(event) {
-
-    event.preventDefault();
-
-    //Collect form value
-    let formData = new FormData(form1);
-
-    if (formData.get("address").length >= 1 && formData.get("city").length >= 1 && formData.get("zip").length >= 1) {
-        //remove t01
-        document.querySelector(".fun-container").remove();
-    }
-
-    //remove form and send alert
 }
 
 //button event
-
+//formData
 let btn2 = document.querySelector("#btn2")
 
-btn2.addEventListener("click", dangeralert)
+btn2.addEventListener("click", check2)
+//hide button
 
-function dangeralert() {
+function check2(event) {
 
-    let wrong2 = document.getElementById("danger2");
+    event.preventDefault();
 
-    if (wrong2.style.display === "none" || wrong2.style.display === "") {
-        wrong2.style.display = "block";
-        wrong2.innerHTML = "Valitettavasti kaikki on loppu.";
+    let right = document.getElementById("success");
+    let wrong = document.getElementById("danger");
+    
+  
+    let address = document.getElementById("address").value;
+    let city = document.getElementById("city").value;
+    let zip = document.getElementById("zip").value;
+
+      if ( address == null || address <= 2 ) {
+        wrong.style.display = "block";
+        wrong.innerHTML = "Address needs more than 2 characters";
+        right.style.display = "none";
+        return
+      } else if ( city == null || city <= 2 ) {
+        wrong.style.display = "block";
+        wrong.innerHTML = "City needs more than 2 characters";
+        right.style.display = "none";
+        return
+      } else if ( zip == null || zip <= 5 ) {
+        wrong.style.display = "block";
+        wrong.innerHTML = "Zip needs more than 2 numbers";
+        right.style.display = "none";
+        return
+        } else { 
+        right.style.display = "none"
+        console.log("Hello world!");
+        wrong.style.display = "block"
+        wrong.innerHTML = "Valitettavasti kaikki on loppu.";
         document.querySelector("form").style.display = "none";
     }
-
-
-    let btn3 = document.createElement("button");
-    btn3.innerHTML = "take me to Etusivu";
-    btn3.addEventListener("click", buttoncreate)
-
-    btn3.classList.add("btn3")
-    function buttoncreate() {
-
-        location.href = "../etusivu.html";
-
-    } document.body.appendChild(btn3);
 }
