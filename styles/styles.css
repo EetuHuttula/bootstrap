@@ -139,7 +139,7 @@ main, h1, p {
 }
 .fun-container {
   max-width: 100%;
-  margin: 50px;
+  margin: 40px;
   box-sizing: border-box;
 
 }
@@ -184,3 +184,39 @@ img[alt~="kissakala"] {
  .card1 {
    margin-top: 40px;
  }
+
+ @media (max-width: 1024px) {
+   *{
+     font-size: 20px;
+     box-sizing: border-box;
+   }
+  h1, p {
+    position: relative;
+    margin-right: 35px;
+  justify-items: center;
+  }
+  .bimg {
+    position: relative;
+  }
+  button {
+    margin-right: 50px;
+  }
+}
+@media (max-width:425px) {
+  *{
+    font-size: 15px;
+    
+  }
+  #danger {
+    text-align:left;
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  #success {
+    text-align:left;
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+  }
+}
