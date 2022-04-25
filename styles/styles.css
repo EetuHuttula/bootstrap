@@ -140,7 +140,7 @@ main, h1, p {
 .fun-container {
   max-width: 100%;
   margin: 50px;
-  align-items: center;
+  box-sizing: border-box;
 
 }
 img[alt~="kissakala"] {
@@ -167,18 +167,7 @@ img[alt~="kissakala"] {
  display: none;
  }
 
- #danger2 {
-  margin: 20px;
-  size: 50%;
-  width: 30%;
-  padding: 20px;
-  border-radius: 10px;
- display: none;
- }
-
  /*button css*/
- 
-
 .btn3 {
     margin: 25px;
     display: inline-block;
