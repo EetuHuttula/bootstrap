@@ -1,6 +1,8 @@
 $typekit-color: rgb(255, 255, 255) !important;
-$typekit-border-color:  rgba(255, 255, 255, .25) !important;
 $font-stack: sans-serif !important;
+@mixin theme($defaultcolor: rgb(255, 0, 0)){
+ color: $defaultcolor;
+}
 
 * {
   font-family: $font-stack;
@@ -23,35 +25,6 @@ $font-stack: sans-serif !important;
 body {
   align-items: center;
 }
-
-/*NAVBAR*/
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: $typekit-border-color;
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: $typekit-color;
-  border-bottom-color: $typekit-color;
-}
-/*divider*/
-.divider {
-  background-color: $typekit-color;
- height: 1px;
-}
-
 /* Galleria page */
 #carousel {
   width: auto;
@@ -84,8 +57,8 @@ blockquote {
   margin: 8px;
 }
 ion-icon {
-  padding-left: 15px;
-  color: $typekit-color;
+  @include theme
+
 }
 
 /*AUTONI CSS*/

@@ -55,13 +55,10 @@ blockquote {
   margin-bottom: 15px;
 }
 /*FOOTERICONS*/
-.icons {
-  justify-content: center;
-  margin: 8px;
-}
 ion-icon {
-  padding-left: 15px;
-  color: #fff;
+  size: 25px;
+ 
+
 }
 
 /*AUTONI CSS*/
