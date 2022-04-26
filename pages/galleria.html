@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleria</title>
-    <link href="../styles/SCSS/built-styles.css">
+    <link href="../styles/SCSS/built-styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../styles/styles.css" rel="stylesheet">
@@ -14,43 +14,54 @@
 </head>
 
 <body class="bg-black">
+
     <div class="bimg" alt="background">
 
         <!--navbarr-->
 
-        <div id="navbar" class="text-center text-white bg-transparent">
-            <div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column col-lg-4">
-                <header class="mb-auto">
-                    <div>
-                        <h3 class="float-md-start mb-0">Eetun kotisivut</h3>
-                        <nav class="nav nav-masthead justify-content-center float-md-end">
-                            <a class="nav-link" href="../etusivu.html">Etusivu</a>
-                            <a class="nav-link" href="../pages/Auto.html">Autoni</a>
-                            <a class="nav-link active" aria-current="page" href="../pages/galleria.html">Galleria</a>
-                            <a class="nav-link" href="../pages/kissakala.html">Kissakala</a>
-                        </nav>
-                    </div>
-                </header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-gray" aria-label="Third navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../etusivu.html">Eetun Kotisivut</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse flow-right" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Auto.html">Autoni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"  href="../pages/galleria.html">Galleria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="../pages/kissakala.html">Jscript tehtävä</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
+        
+
         <div class="coverBnt text-center text-white bg-transparent">
             <main class="px-3 position-absolute top-50 start-50 translate-middle">
-                <h1>Its me, myself and I!</h1>
+                <h2>Its me, myself and I!</h2>
                     <button type="button" onclick="toggle2()"
                         class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Karuselli</button>
                     <a id="dbtn" href="../pages/kissakala.html"
                         class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Seuraava sivu</a>
             </main>
-        </div>
+         </div>
     </div>
+
 
     <!--divider-->
     <div class="divider"></div>
 
     <!--Carousel-->
-    <div class="container">
+    <div id="carousel"  class="container">
         <div class="row" style="margin: 2px;">
-            <div id="carousel" class="bg-black col-12">
+            <div  class="bg-black col-12">
                 <main class="px-3 p-5 mx-auto flex-column">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -158,6 +169,6 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
 
+</body>
 </html>
