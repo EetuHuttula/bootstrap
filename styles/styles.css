@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  font-size: 13pt;
 }
 
 /*background*/
@@ -11,7 +12,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 880px;
+  height: 860px;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
@@ -39,26 +40,29 @@ body {
 
 .nav-masthead .active {
   color: #fff;
-  border-bottom-color: #fff;
+  border-bottom-color: rgba(255, 255, 255, .25);
 }
 /*divider*/
 .divider {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
  height: 1px;
 }
 
 /* Galleria page */
 #carousel {
-  width: auto;
   display: none;
 }
 .carousel-inner {
   display: none;
     border-radius: 10px;
 }
-
-/* quotebox */
-
+.Ccontainer {
+  margin: 50px;
+}
+.card {
+  padding: 15px;
+  margin-left: 10px;
+}
 
 .quote-container {
   margin-top: 15px;
@@ -89,9 +93,13 @@ ion-icon {
 /*AUTONI CSS*/
 .car-info-container {
   display: none;
-  padding: 15px;
 }
-/*CAR-CONTAINER*/
+.CARcontainer {
+  max-width: 100%;
+  margin: 40px;
+  box-sizing: border-box;
+}
+/*GALLERIA*/
 img[alt~="me"] {
   border-radius: 5px;
   max-width: 100%;
@@ -110,6 +118,7 @@ main, h1, p {
   justify-items: center;
 }
 
+
 /*kalastus sivun content container*/
 
 #form1 {
@@ -125,7 +134,7 @@ main, h1, p {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #fff;
   -moz-appearance: none;
   appearance: none;
   border-radius: 0.25rem;
@@ -137,11 +146,10 @@ main, h1, p {
   width: 50%;
   margin: 4px;
 }
-.fun-container {
+.container {
   max-width: 100%;
   margin: 40px;
   box-sizing: border-box;
-
 }
 img[alt~="kissakala"] {
   width: 100%;
@@ -150,7 +158,7 @@ img[alt~="kissakala"] {
 }
 
 #success {
-  margin: 20px;
+  margin-top: 20px;
   size: 50%;
   width: 30%;
   padding: 20px;
@@ -159,35 +167,42 @@ img[alt~="kissakala"] {
 }
 
  #danger {
-  margin: 20px;
+  margin-top: 20px;
   size: 35%;
   width: 30%;
   padding: 20px;
   border-radius: 10px;
  display: none;
  }
-
+  /*ETUSIVU*/
  .iframe-container {
+   margin: 20px;
    position: relative;
    width: 100%;
    padding-bottom: 56.25%;
    height: 0;
    margin: 10px;
+   
  }
  .iframe-container iframe {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
- }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.etusivucontainer{
+  width: 80%;
+  margin: 50px;
+}
  .card1 {
-   margin-top: 40px;
+   margin: 40px;
+  
  }
 
  @media (max-width: 1024px) {
    *{
-     font-size: 20px;
+     font-size: 12pt;
      box-sizing: border-box;
    }
   h1, p {
@@ -197,26 +212,34 @@ img[alt~="kissakala"] {
   }
   .bimg {
     position: relative;
+    width: auto;
+  height: 650px;
   }
-  button {
-    margin-right: 50px;
+ }
+@media (max-width:650px) {
+  .container {
+    max-width: 100%;
+    margin-top: 40px;
+    box-sizing: border-box;
   }
-}
-@media (max-width:425px) {
   *{
-    font-size: 15px;
-    
+
+    box-sizing: border-box;
   }
   #danger {
     text-align:left;
-    margin-right: 50px;
     width: 100%;
     height: 100%;
   }
   #success {
     text-align:left;
-    margin-right: 50px;
     width: 100%;
     height: 100%;
+  }
+  h1, p {
+    position: relative;
+  }
+  #dbtn {
+    display: none;
   }
 }
