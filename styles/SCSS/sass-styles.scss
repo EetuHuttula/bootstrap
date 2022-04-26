@@ -63,8 +63,6 @@ body {
 }
 
 /* quotebox */
-
-
 .quote-container {
   margin-top: 15px;
 }
@@ -79,7 +77,6 @@ blockquote {
 .accordion {
   border-radius: 10px;
   margin-top: 15px;
-  margin-bottom: 15px;
 }
 /*FOOTERICONS*/
 .icons {
@@ -94,7 +91,6 @@ ion-icon {
 /*AUTONI CSS*/
 .car-info-container {
   display: none;
-  padding: 15px;
 }
 /*CAR-CONTAINER*/
 img[alt~="me"] {
@@ -146,11 +142,6 @@ main, h1, p {
   width: 50%;
   margin: 4px;
 }
-.container {
-  max-width: 100%;
-  margin: 40px;
-  box-sizing: border-box;
-}
 img[alt~="kissakala"] {
   width: 100%;
   max-width: 400px;
@@ -189,9 +180,6 @@ img[alt~="kissakala"] {
     height: 100%;
   }
  }
- .card1 {
-   margin-top: 40px;
- }
 
  @media (max-width: 1024px) {
    *{
@@ -200,8 +188,7 @@ img[alt~="kissakala"] {
    }
   h1, p {
     position: relative;
-    margin-right: 35px;
-  justify-items: center;
+    justify-items: center;
   }
   .bimg {
     position: relative;
@@ -212,8 +199,6 @@ img[alt~="kissakala"] {
 @media (max-width:650px) {
   .container {
     max-width: 100%;
-    margin-top: 40px;
-    box-sizing: border-box;
   }
   *{
 
