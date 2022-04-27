@@ -153,6 +153,55 @@ img[alt~="kissakala"] {
     height: 100%;
   }
  }
+ main {
+   font: $typekit-color;
+ }
+ #nav,
+#footer {
+  display: flex;
+  flex-direction: row;
+}
+#nav a,
+#footer a {
+  color: orangered;
+  padding: 0.25rem ;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay.active {
+  display: flex;
+  cursor: wait;
+}
+.loading {
+  font-size: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
  @media (max-width: 1024px) {
    *{
